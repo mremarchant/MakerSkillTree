@@ -2,7 +2,6 @@ import yaml
 import argparse
 import os
 
-# Function definitions
 def load_yaml(file_path):
     with open(file_path) as file:
         return yaml.safe_load(file)
@@ -48,8 +47,6 @@ def save_processed_svg(content, output_path):
     with open(output_path, "w") as file:
         file.write(content)
 
-# Main script logic
-# Replace argparse with hardcoded paths
 input_yaml = "input.yml"  # Path to uploaded YAML file
 output_svg = "output.svg"  # Output file
 svg_template_path = "skill_tree_template.svg.j2"  # Path to uploaded SVG template
